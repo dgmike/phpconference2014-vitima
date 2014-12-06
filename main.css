@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 90%;
+	font-family: sans-serif;
+}
+
+.header {
+	background: #93cede; /* Old browsers */
+	background: linear-gradient(to bottom, #49a5bf 0%, #93cede 100%); /* W3C */
+	height: 3em;
+	color: #FFF;
+	line-height: 3em;
+	text-align: center;
+}
+
+.content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+.main {
+	padding: 1em 0 0;
+	margin-left: 18%;
+	list-style-type: none;
+	font-size: .8em;
+}
+
+.menu {
+	margin: 1em 0 0;
+	float: left;
+	width: 17%;
+	list-style: none;
+}
+
+	.menu .menu--link {
+		display: block;
+		color: #DDD;
+		text-decoration: none;
+		background: #49a5bf;
+		padding: 3px;
+		border-left: 6px solid #49a5bf;
+	}
+
+	.menu .menu--link:hover {
+		background: #93cede;
+		border-left: 6px solid #49a5bf;
+		color: #FFF;
+	}
+
+		.menu .menu--item--selecionado .menu--link {
+			border-left: 6px solid #93cede;
+			color: #FFF;
+		}
+
+.produtos {
+	padding: 1em 0 0;
+	margin-left: 18%;
+	list-style-type: none;
+}
+
+	.produtos:after {
+		content: " ";
+		display: block;
+		clear: both;
+		line-height: 1px;
+	}
+
+.produtos .produto {
+	float: left;
+	width: 32%;
+	height: 250px;
+}
+
+	.produtos .produto a {
+		text-decoration: none;
+		color: #444;
+		text-align: center;
+	}
+
+		.produtos .produto a:hover {
+			text-decoration: none;
+			color: #888;
+		}
+
+	.produtos .produto .produto--imagem {
+		max-height: 130px;
+		border: 2px solid #FFF;
+		padding: 3px;
+		display: block;
+		margin: 0 auto;
+	}
+
+		.produtos .produto a:hover .produto--imagem {
+			border: 2px solid #DDF;
+		}
+
+	.produtos .produto .produto--categoria {
+		display: none;
+	}
+
+	.produtos .produto .produto--titulo {
+		display: block;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+	.produto .produto--preco {
+		display: block;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+		.produto .produto--preco--com-desconto {
+			font-size: .9em;
+			text-decoration: line-through;
+			color: #D00;
+		}
+
+	.produto .produto--desconto {
+		font-size: .9em;
+		display: block;
+	}
+
+	.produto .produto--preco-final {
+		font-size: 1.3em;
+		display: block;
+		color: #0A0;
+		font-weight: bold;
+	}
+
+
+.breadcrumb {
+	list-style: none;
+	display: inline;
+}
+
+	.breadcrumb .breadcrumb--item {
+		display: inline;
+		font-size: .8em;
+	}
+
+	.breadcrumb .breadcrumb--item:before {
+		content: " » ";
+	}
+
+
+.produto--detalhes {
+	padding: 1em 0 0;
+	margin-left: 18%;
+}
+
+.produto--detalhes:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+	
+	.produto--detalhes .produto--titulo {
+		font-style: 2em;
+		text-transform: capitalize;
+	}
+
+	.produto--detalhes .produto--imagem {
+		float: left;
+		width: 40%;
+		height: 300px;
+		border: 3px solid #DDF;
+		margin: 5px 0;
+		text-align: center;
+	}
+
+	.produto--detalhes .produto--imagem img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.produto--detalhes .produto--descricao {
+		margin-left: 42%;
+		padding-top: 5px;
+	}
+
+	.produto--detalhes .preco {
+		border-top: 1px solid #DDD;
+		margin-left: 42%;
+		padding-top: 15px;
+		margin-top: 10px;
+	}
+
+/* SOURCE http://www.cssbuttongenerator.com/ */
+.produto--acao {
+	margin-left: 42%;
+	margin-top: 10px;
+}
+
+.produto--adicionar {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background: gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background-color:#77d42a;
+	text-indent:0px;
+	border:1px solid #268a16;
+	border-radius: 5px;
+	display:inline-block;
+	color: #306108;
+	font-weight:bold;
+	font-style:normal;
+	height:35px;
+	line-height:35px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #aade7c;
+	padding: 0 1em;
+}
+	.produto--adicionar:hover {
+		background: gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+		background-color:#5cb811;
+	}
+	.produto--adicionar:active {
+		position:relative;
+		top:1px;
+	}
+
+.comentarios {
+	clear: both;
+	border-top: 1px solid #DDD;
+	margin: 2em 0 2em 18%;
+	padding-top: 2em;
+}
+
+.carrinho {
+	padding: 1em 0 0;
+	margin-left: 18%;
+	list-style-type: none;
+	font-size: .8em;
+}
+
+.carrinho:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+	.carrinho img {
+		vertical-align: middle;
+		max-height: 56px;
+	}
+
+	.carrinho thead th {
+		border-bottom: 2px solid #AAA;
+		padding: 5px;
+	}
+
+	.carrinho td {
+		border-bottom: 1px solid #AAA;
+		padding: 5px;
+	}
+
+	.carrinho tbody tr:nth-child(even) {
+		background: #EEF;
+	}
+
+	.carrinho tbody td+td+td {
+		text-align: center;
+	}
+	
+	.carrinho tfoot th {
+		text-align: left;
+		padding: 5px;
+		border-bottom: 1px solid #DDD;
+	}
+
+	.carrinho tfoot th+th {
+		text-align: center;
+		font-weight: bold;
+	}
+
+.form {
+	margin: 20px 0;
+}
+
+	.form label {
+		display: block;
+		margin: 5px 0;
+	}
+
+		.form input[type=text], .form input[type=email], .form textarea {
+			display: block;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #CCC;
+			width: 300px;
+			margin-top: 3px;
+		}
+
+		.form textarea {
+			height: 40px;
+		}
+
+		.form fieldset {
+			border: none;
+			margin: 10px 0;
+		}
+
+		.form .pagamento--forma {
+			display: inline-block;
+			text-align: center;
+			margin: 5px;
+		}
+
+
+		.form .pagamento--forma input {
+			vertical-align: middle;
+			margin-top: 3px;
+		}
+
+		.form .pagamento--forma .bandeira {
+			display: block;
+			margin: 3px auto;
+			width: 42px;
+			height: 20px;
+			vertical-align: middle;
+			background: url("/imagens/bandeiras-sprite.gif");
+		}
+
+		.form .pagamento--boleto .bandeira {background-position: -630px 0;}
+		.form .pagamento--mastercard .bandeira {background-position: -84px 0;}
+		.form .pagamento--elo .bandeira {background-position: -294px 0;}
+		.form .pagamento--visa .bandeira {background-position: -42px 0;}
+		.form .pagamento--diners .bandeira {background-position: -126px 0;}
+		.form .pagamento--americanexpress .bandeira {background-position: -168px 0;}
+		.form .pagamento--bradesco .bandeira {background-position: -420px 0;}
+		.form .pagamento--itau .bandeira {background-position: -462px 0;}
+
+/* This button was generated using CSSButtonGenerator.com */
+.remover {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background: gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background-color:#f24537;
+	border-radius:20px;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:9px;
+	font-weight:bold;
+	font-style:normal;
+	height:20px;
+	line-height:20px;
+	width:21px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+}
+.remover:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+.remover:active {
+	position:relative;
+	top:1px;
+}
+
+
+.rodape {
+	background: #284182;
+	width: 100%;
+	border-top: 5px solid #6596E9;
+	padding: 1.5em 0;
+	font-size: .8em;
+	line-height: 1.2em;
+}
+
+.rodape:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+	.rodape .wapper {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.rodape .links {
+		list-style: none;
+		float: left;
+		width: 300px;
+	}
+
+		.rodape .links a {
+			color: #AAF;
+			text-decoration: none;
+		}
+
+		.rodape .links a:hover {
+			color: #FFF;
+		}
+
+		.rodape .links--item--principal,
+		.rodape .links--item--principal a {
+			font-weight: 600;
+			color: #FFF;
+		}
+
+	.rodape .selos {
+		list-style: none;
+		float: left;
+		font-weight: 600;
+		color: #FFF;
+	}
